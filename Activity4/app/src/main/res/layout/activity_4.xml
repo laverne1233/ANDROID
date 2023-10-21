@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_settings.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"> <!-- Adds padding to the entire layout -->
+
+    <TextView
+        android:id="@+id/themeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/theme"
+        android:textStyle="bold"
+        android:layout_margin="10dp" /> <!-- Minimum margin of 10dp on all sides -->
+
+    <RadioGroup
+        android:id="@+id/themeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/lightModeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light_mode"
+            android:layout_margin="10dp" /> <!-- Minimum margin of 10dp on all sides -->
+
+        <RadioButton
+            android:id="@+id/darkModeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dark_mode"
+            android:layout_margin="10dp" /> <!-- Minimum margin of 10dp on all sides -->
+    </RadioGroup>
+    <TextView
+        android:id="@+id/notificationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notification"
+        android:textStyle="bold"
+        android:layout_margin="10dp" /> <!-- Minimum margin of 10dp on all sides -->
+
+    <CheckBox
+        android:id="@+id/notificationsCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/allow_push_notifications"
+        android:layout_margin="10dp" /> <!-- Minimum margin of 10dp on all sides -->
+
+    <TextView
+        android:id="@+id/profileDetailsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_details"
+        android:textStyle="bold"
+        android:layout_margin="10dp" /> <!-- Minimum margin of 10dp on all sides -->
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_address"
+        android:layout_margin="10dp" /> <!-- Minimum margin of 10dp on all sides -->
+
+    <EditText
+        android:id="@+id/nicknameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nickname"
+        android:layout_margin="10dp" /> <!-- Minimum margin of 10dp on all sides -->
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:width="250dp"
+        android:background="@color/gray" />
+</LinearLayout>
